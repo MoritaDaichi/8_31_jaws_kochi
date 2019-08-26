@@ -4,3 +4,9 @@
 # 前提
 
 # 操作手順
+
+slack + lambda
+  + testで実行
+  + cloud watchで実行 -> 毎朝投稿できるよね
+  + api gatewayで実行 + dynamodb
+  + 
