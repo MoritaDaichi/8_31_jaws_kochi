@@ -82,12 +82,12 @@ def lambda_handler(event, context):
 
 ## オプション
 
-完成した人はオプションで色々
+完成した人は、自由に触ってみてください。
+・username,icon,textの変更
+・Lambdaの起動方法を設定　cloud watch,api gateway等
+
+### cloudwatchでLambdaを起動
+Designerからtriggerを追加をクリック
+画像7
 
 
-
-
-slack + lambda
-  + cloud watchで実行 -> 毎朝投稿できるよね
-  + api gatewayで実行 + dynamodb
-  + google アナリティクスをslackに入れる
