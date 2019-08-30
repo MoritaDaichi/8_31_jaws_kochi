@@ -5,7 +5,8 @@
 
 
 # 前提
-slackのワークスペースに入ってください。 下のリンクから
+slack使ったことのない人はこのワークスペースに。利用している方は、そのワークスペースでも大丈夫です。
+
 https://join.slack.com/t/jaws-kochi-0831/shared_invite/enQtNzMxOTYwMTUwOTQ2LWY1OWVlNzgyNTkxNDc1OTk2OWVmZmEzZGUzNmI3MjRlYjhjOTRlZGNhODBkODc0NjlmNGE1ZDBlM2M3YmYzYzc
 
 
@@ -107,7 +108,7 @@ Designerからtriggerを追加をクリック
 ![k_7](https://github.com/MoritaDaichi/8_31_jaws_kochi/blob/master/k_7.png)
 
 
-rate(5 minutes)
+rate(5 minutes)をschedule expressionに設定 -> 5分ごとに起動するようになる
 ![k_8](https://github.com/MoritaDaichi/8_31_jaws_kochi/blob/master/k_8.png)
 
 
@@ -120,9 +121,3 @@ slackを開き、右のサイドバーにあるAppsをクリック。
 lamdbaコンソールを開き。自分の作った関数をクリック。
 create functionの隣にあるActionsから、deleteを選び、削除する。
 ![k_9](https://github.com/MoritaDaichi/8_31_jaws_kochi/blob/master/k_9.png)
-
-
-rate(5 minutes)
-
-
-
