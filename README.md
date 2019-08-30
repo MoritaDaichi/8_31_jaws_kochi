@@ -25,13 +25,28 @@ C.Webhook URLをコピー
 ### A.slack appを作成
 https://api.slack.com/incoming-webhooks#posting_with_webhooks
 
+create your slack app をクリック
+![k_1](https://github.com/MoritaDaichi/8_31_jaws_kochi/blob/master/k_1.png)
+
+
 ### B.チャンネルを選択
-generalを選んで作成
+
+app名を入力し、チャンネルにJAWS高知を選択する
+![k_3](https://github.com/MoritaDaichi/8_31_jaws_kochi/blob/master/k_3.png)
+
+
+送信先にgeneralを選択
+![k_4](https://github.com/MoritaDaichi/8_31_jaws_kochi/blob/master/k_4.png)
+
+
 
 ### c.Webhook URLをコピー
-下のような画像のURLがでてくるので、それをメモ帳にコピーしておくか、slack URLを
-画像5
+下のような画像のURLがでてくるので、それをメモ帳にコピーしておく。
 
+![k_5](https://github.com/MoritaDaichi/8_31_jaws_kochi/blob/master/k_5.png)
+
+
+このコマンドをターミナルで打ち、自分が指定したチャンネルに送信できているか確認
 curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}'
 https://hooks.slack.com/services@@@@@@@@@@@@@@@@
 
@@ -78,7 +93,7 @@ def lambda_handler(event, context):
 # この下に貼り付け
 ```
 できたらtestをクリックして、適当な名前をつけてテストを作ってください
-画像6
+![k_6](https://github.com/MoritaDaichi/8_31_jaws_kochi/blob/master/k_6.png)
 
 ## オプション
 
@@ -88,6 +103,6 @@ def lambda_handler(event, context):
 
 ### cloudwatchでLambdaを起動
 Designerからtriggerを追加をクリック
-画像7
+
 
 
