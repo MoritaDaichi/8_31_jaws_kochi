@@ -98,11 +98,31 @@ def lambda_handler(event, context):
 ## オプション
 
 完成した人は、自由に触ってみてください。
+・環境変数にWebhookURLを格納して利用
 ・username,icon,textの変更
 ・Lambdaの起動方法を設定　cloud watch,api gateway等
 
 ### cloudwatchでLambdaを起動
 Designerからtriggerを追加をクリック
+![k_7](https://github.com/MoritaDaichi/8_31_jaws_kochi/blob/master/k_7.png)
+
+
+rate(5 minutes)
+![k_8](https://github.com/MoritaDaichi/8_31_jaws_kochi/blob/master/k_8.png)
+
+
+# お片づけ
+## slackのお片づけ
+slackを開き、右のサイドバーにあるAppsをクリック。
+自分のアプリの設定を開き Remove app をクリック。
+
+## lambdaのお片づけ
+lamdbaコンソールを開き。自分の作った関数をクリック。
+create functionの隣にあるActionsから、deleteを選び、削除する。
+![k_9](https://github.com/MoritaDaichi/8_31_jaws_kochi/blob/master/k_9.png)
+
+
+rate(5 minutes)
 
 
 
