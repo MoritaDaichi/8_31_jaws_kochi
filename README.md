@@ -17,10 +17,47 @@ https://join.slack.com/t/jaws-kochi-0831/shared_invite/enQtNzMxOTYwMTUwOTQ2LWY1O
 Incoming Webhookアプリを使用する場合の登録手順は以下になります。
 
 ## 1.SlackのWorkspaceにIncoming Webhookを登録
-1.Incoming Webhookアプリを登録 (設定を追加)
-2.チャンネルを選択
-3.Webhook URLをコピー
+A.slack appを作成
+B.チャンネルを選択
+C.Webhook URLをコピー
 (名前、アイコンなどをカスタマイズ)
+
+### A.slack appを作成
+https://api.slack.com/incoming-webhooks#posting_with_webhooks
+
+### B.チャンネルを選択
+generalを選んで作成
+
+### c.Webhook URLをコピー
+下のような画像のURLがでてくるので、それをメモ帳にコピーしておくか、slack URLを
+
+curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}'
+https://hooks.slack.com/services@@@@@@@@@@@@@@@@
+
+## 2.slackにPOSTするプログラムを作成(Python)
+
+```import json
+import urllib.request
+
+def post_slack():
+    message = "こんにちは"
+    send_data = {
+        "username": "自分の名前",
+        "icon_emoji": ":grinning:",
+        "text": message,
+    }
+    send_text = "payload=" + json.dumps(send_data)
+    # URLにはご自分のWebhook URLを入力してください
+    request = urllib.request.Request(
+        "https://hook.slack.com/~~~~~~~~", 
+        data=send_text.encode("utf-8"), 
+        method="POST"
+    )
+    with urllib.request.urlopen(request) as response:
+        response_body = response.read().decode("utf-8")
+```
+
+
 
 
 
@@ -28,4 +65,4 @@ slack + lambda
   + testで実行
   + cloud watchで実行 -> 毎朝投稿できるよね
   + api gatewayで実行 + dynamodb
-  + 
+  + google アナリティクスをslackに入れる
