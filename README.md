@@ -30,17 +30,19 @@ generalを選んで作成
 
 ### c.Webhook URLをコピー
 下のような画像のURLがでてくるので、それをメモ帳にコピーしておくか、slack URLを
+画像5
 
 curl -X POST -H 'Content-type: application/json' --data '{"text":"Hello, World!"}'
 https://hooks.slack.com/services@@@@@@@@@@@@@@@@
 
 ## 2.slackにPOSTするプログラムを作成(Python)
 
-```import json
+```
+import json
 import urllib.request
 
 def post_slack():
-    message = "こんにちは"
+    message = "好きなmessage"
     send_data = {
         "username": "自分の名前",
         "icon_emoji": ":grinning:",
@@ -57,12 +59,35 @@ def post_slack():
         response_body = response.read().decode("utf-8")
 ```
 
+## 3.AWSの設定 <- こっから本編
+
+名前は任意のものを入力してください。
+ランタイムは今回はPython 3.7を選択します。
+ロールは、特に権限を持たないロールを一つ作成して割り当てます。
+
+すでにあるコードの下に、先ほどのコードを貼り付ける。
+post_slack()
+```
+def lambda_handler(event, context):
+    # TODO implement
+    # ここにpost_slack() 
+    return {
+        'statusCode': 200,
+        'body': json.dumps('Hello from Lambda!')
+    }
+# この下に貼り付け
+```
+できたらtestをクリックして、適当な名前をつけてテストを作ってください
+画像6
+
+## オプション
+
+完成した人はオプションで色々
 
 
 
 
 slack + lambda
-  + testで実行
   + cloud watchで実行 -> 毎朝投稿できるよね
   + api gatewayで実行 + dynamodb
   + google アナリティクスをslackに入れる
