@@ -3,6 +3,8 @@
 
 # 前提
 slack使ったことのない人はこのワークスペースに。利用している方は、そのワークスペースでも大丈夫です。
+*権限が付与されていなければ,appを作成できない場合があります
+*最後にappを削除することをわすれないでください
 
 https://join.slack.com/t/jaws-kochi-0831/shared_invite/enQtNzMxOTYwMTUwOTQ2LWY1OWVlNzgyNTkxNDc1OTk2OWVmZmEzZGUzNmI3MjRlYjhjOTRlZGNhODBkODc0NjlmNGE1ZDBlM2M3YmYzYzc
 
