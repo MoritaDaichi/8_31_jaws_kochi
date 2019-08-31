@@ -100,6 +100,9 @@ def lambda_handler(event, context):
 ・username,icon,textの変更
 ・Lambdaの起動方法を設定　cloud watch,api gateway等
 
+### api gatewayでLambdaを起動
+https://qiita.com/baikichiz/items/2de7c4c0dcf9b051037a
+
 ### cloudwatchでLambdaを起動
 Designerからtriggerを追加をクリック
 ![k_7](https://github.com/MoritaDaichi/8_31_jaws_kochi/blob/master/k_7.png)
