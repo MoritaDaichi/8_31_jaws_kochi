@@ -9,6 +9,8 @@ slack使ったことのない人はこのワークスペースに。利用して
 https://join.slack.com/t/jaws-kochi-0831/shared_invite/enQtNzMxOTYwMTUwOTQ2LWY1OWVlNzgyNTkxNDc1OTk2OWVmZmEzZGUzNmI3MjRlYjhjOTRlZGNhODBkODc0NjlmNGE1ZDBlM2M3YmYzYzc
 
 
+v2 appを作れなかった人はこちらから
+https://join.slack.com/t/jaws-v2/shared_invite/enQtNzMzMTY4Mjg2Mjc1LWNhYTk4Yjk2OGE0N2NmZWJmNWI3Yjc5MDYyYjdmYmI3YzE4YzBjMDY3NzE4YjY0ZGNiNDJmYzIzMDQ3YTU1NTc
 # 操作手順
 1.SlackのWorkspaceにIncoming Webhookを登録
 2.SlackにPOSTするプログラム作成 (Python)
@@ -34,6 +36,7 @@ create your slack app をクリック
 app名を入力し、チャンネルにJAWS高知を選択する
 ![k_3](https://github.com/MoritaDaichi/8_31_jaws_kochi/blob/master/k_3.png)
 
+incoming webhookを選択し、onにする
 
 送信先にgeneralを選択
 ![k_4](https://github.com/MoritaDaichi/8_31_jaws_kochi/blob/master/k_4.png)
