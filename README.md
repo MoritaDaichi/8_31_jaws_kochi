@@ -9,7 +9,7 @@ slack使ったことのない人はこのワークスペースに。利用して
 https://join.slack.com/t/jaws-kochi-0831/shared_invite/enQtNzMxOTYwMTUwOTQ2LWY1OWVlNzgyNTkxNDc1OTk2OWVmZmEzZGUzNmI3MjRlYjhjOTRlZGNhODBkODc0NjlmNGE1ZDBlM2M3YmYzYzc
 
 
-v2 appを作れなかった人はこちらから
+v2 これ以上アプリを追加できませんが、出た人はこちらに入って作業してください
 https://join.slack.com/t/jaws-v2/shared_invite/enQtNzMzMTY4Mjg2Mjc1LWNhYTk4Yjk2OGE0N2NmZWJmNWI3Yjc5MDYyYjdmYmI3YzE4YzBjMDY3NzE4YjY0ZGNiNDJmYzIzMDQ3YTU1NTc
 # 操作手順
 1.SlackのWorkspaceにIncoming Webhookを登録
