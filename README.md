@@ -55,6 +55,8 @@ https://hooks.slack.com/services@@@@@@@@@@@@@@@@
 
 ## 2.slackにPOSTするプログラムを作成(Python)
 
+
+このコードはあとで使います
 ```
 import json
 import urllib.request
