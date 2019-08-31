@@ -36,7 +36,7 @@ create your slack app をクリック
 app名を入力し、チャンネルにJAWS高知を選択する
 ![k_3](https://github.com/MoritaDaichi/8_31_jaws_kochi/blob/master/k_3.png)
 
-incoming webhookを選択し、onにする
+add featuers and function -> incoming webhooksを選択し -> onにする
 
 送信先にgeneralを選択
 ![k_4](https://github.com/MoritaDaichi/8_31_jaws_kochi/blob/master/k_4.png)
